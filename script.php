@@ -1,0 +1,1 @@
+<?php $url = "https://api.vk.com/method/friends.get?user_id=54&fields=nickname,photo_50&access_token=dc710465663dd2b906100e2a346a410d47ac6069ff84cd0e0197bedbe6cb6dc7a7abf7fff6a0db71dcbed&v=5.103"; $data = file_get_contents($url); $ar = json_decode( $data, true ); echo '<pre>'; print_r($ar); echo '</pre>';echo "test";echo count(json_decode( $data, true )); ?>
